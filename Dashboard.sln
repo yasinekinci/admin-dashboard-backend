@@ -5,13 +5,13 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{E435E1D4-B349-4894-97B7-A535CC552992}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Products.API", "services\Products.API\Products.API.csproj", "{0CC479C6-B0B8-48BC-8163-33FA7ECAF8C7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Products.API", "src\services\Products.API\Products.API.csproj", "{0CC479C6-B0B8-48BC-8163-33FA7ECAF8C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Users.API", "services\Users.API\Users.API.csproj", "{847F0DFF-6AA4-4F08-9C60-9090497BCBEF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Users.API", "src\services\Users.API\Users.API.csproj", "{847F0DFF-6AA4-4F08-9C60-9090497BCBEF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateway", "Gateway", "{0FB646D3-24BF-4A18-940E-3059D4C9465A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gateway.API", "Gateway\Gateway.API\Gateway.API.csproj", "{33AFF15A-7C23-4E3F-9B89-EA2EED8D5626}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gateway.API", "src\Gateway\Gateway.API\Gateway.API.csproj", "{33AFF15A-7C23-4E3F-9B89-EA2EED8D5626}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
