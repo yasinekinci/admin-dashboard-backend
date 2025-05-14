@@ -33,7 +33,7 @@ jobs:
       - name: ACR Login
         run: az acr login --name ${{ env.REGISTRY_NAME }}
 
-      # Build & push gateway-api
+      # Build & push gateway-api 
       - name: Build and Push gateway-api
         uses: docker/build-push-action@v5
         with:
