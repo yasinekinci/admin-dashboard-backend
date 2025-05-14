@@ -1,0 +1,33 @@
+services:
+  gateway-api:
+    image: ${DOCKER_REGISTRY-}gateway.api
+    build:
+      context: .
+      dockerfile: src/gateway/Gateway.API/Dockerfile
+    ports:
+      - "8000:80"
+    depends_on:
+      - products-api
+      - users-api
+    networks:
+      - microservices-network
+
+  products-api:
+    image: ${DOCKER_REGISTRY-}products.api
+    build:
+      context: .
+      dockerfile: src/services/Products.API/Dockerfile
+    networks:
+      - microservices-network
+
+  users-api:
+    image: ${DOCKER_REGISTRY-}users.api
+    build:
+      context: .
+      dockerfile: src/services/Users.API/Dockerfile
+    networks:
+      - microservices-network
+
+networks:
+  microservices-network:
+    driver: bridge
