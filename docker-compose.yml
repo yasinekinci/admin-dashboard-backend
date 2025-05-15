@@ -28,6 +28,14 @@ services:
     networks:
       - microservices-network
 
+  aggregator-api:
+    image: ${DOCKER_REGISTRY-}aggregator.api
+    build:
+      context: .
+      dockerfile: src/aggregator/Aggregator.API/Dockerfile
+    networks:
+      - microservices-network
+
 networks:
   microservices-network:
     driver: bridge
