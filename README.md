@@ -1,7 +1,7 @@
 # admin-dashboard-backend
 
 Architectural : 
-    API Gateway & BFF (Backend for Frontend)(Orion)
+    API Gateway & BFF (Backend for Frontend)(YARD)
     Micro Service    
     NLayer/Clear Architecture
     Repository
