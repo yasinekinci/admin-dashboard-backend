@@ -22,9 +22,9 @@ jobs:
     - name: Log in to registry
       uses: docker/login-action@v2
       with:
-        registry: https://dashboard2025container.azurecr.io/
-        username: ${{ secrets.AzureAppService_ContainerUsername_dc6b81194cf24e3383a3dfa55487a577 }}
-        password: ${{ secrets.AzureAppService_ContainerPassword_216447eeb13b4c168cb6330f2e053d6c }}
+        registry: dashboard2025container.azurecr.io
+        username: ${{ secrets.ACR_USERNAME }}
+        password: ${{ secrets.ACR_PASSWORD }
 
     - name: Build and push container image to registry
       uses: docker/build-push-action@v3
