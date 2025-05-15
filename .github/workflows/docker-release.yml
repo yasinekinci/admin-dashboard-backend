@@ -27,11 +27,13 @@ jobs:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           client-secret: ${{ secrets.AZURE_CLIENT_SECRET }}
+          subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          auth-type: SERVICE_PRINCIPAL
 
       - name: ACR Login
         run: az acr login --name ${{ env.REGISTRY_NAME }}
 
-      # Build & push gateway-api
+      # Build & push gateway-api 
       - name: Build and Push gateway-api
         uses: docker/build-push-action@v5
         with:
